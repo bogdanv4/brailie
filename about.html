@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/b76f6be7b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://zeptojs.com/zepto.min.js"></script>
+    <script src="./vegas/vegas.min.js"></script>
+    <link rel="stylesheet" href="./vegas/vegas.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Brailie</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a id="logo" href="index.html">
+          <img src="./img/logo.png" alt="" />
+        </a>
+        <a id="home-link" href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
+    </header>
+    <div class="hero hero-about">
+      <div class="hero-heading">
+        <h4>About me</h4>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="main-heading">
+          <h2>
+            We are Brailie, a group of freelance photographers. Our passion is
+            taking photos of the most stunning architecture around the world.
+          </h2>
+        </div>
+        <div class="row about-row">
+          <div class="row-inner about-inner">
+            <img src="./img/about1.jpg" alt="" />
+          </div>
+          <div class="row-inner about-inner">
+            <p>
+              <span class="first-letter">N</span>ulla vitae elit libero, a
+              pharetra augue. Cras mattis consectetur purus sit amet fermentum.
+              Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum
+              nibh, ut fermentum massa justo sit amet risus. Sed posuere
+              consectetur est at lobortis. Nullam id dolor id nibh ultricies
+              ut.<br /><strong>- Connor Gibson</strong>
+            </p>
+          </div>
+          <div class="row-inner about-inner">
+            <h1>Our Skills</h1>
+            <p>Photoshop</p>
+            <div class="skill">
+              <div class="skill-done skill1"><strong>90%</strong></div>
+            </div>
+            <p>Final Cut</p>
+            <div class="skill">
+              <div class="skill-done skill2"><strong>80%</strong></div>
+            </div>
+            <p>Studio Photography</p>
+            <div class="skill">
+              <div class="skill-done skill3"><strong>85%</strong></div>
+            </div>
+            <p>Motion Video</p>
+            <div class="skill">
+              <div class="skill-done skill4"><strong>65%</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="credentials">
+      <div class="container credentials-container">
+        <div class="row credentials-row">
+          <div class="row-inner credentials-inner">
+            <div class="icon-holder">
+              <i class="fas fa-camera"></i>
+            </div>
+            <h1>7518</h1>
+            <p>SHOTS TAKEN</p>
+          </div>
+          <div class="row-inner credentials-inner">
+            <div class="icon-holder">
+              <i class="fas fa-video"></i>
+            </div>
+            <h1>3472</h1>
+            <p>VIDEOS EDITED</p>
+          </div>
+          <div class="row-inner credentials-inner">
+            <div class="icon-holder">
+              <i class="fas fa-images"></i>
+            </div>
+            <h1>2184</h1>
+            <p>PHOTOS EDITED</p>
+          </div>
+          <div class="row-inner credentials-inner">
+            <div class="icon-holder">
+              <i class="fas fa-award"></i>
+            </div>
+            <h1>4523</h1>
+            <p>AWARDS WON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="questions">
+      <div class="container">
+        <div class="main-heading">
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="column">
+          <button type="button" class="collapsible">Who are you?</button>
+          <div class="collapsible-content">
+            <p>
+              We are Brailie, a group of freelance photographers, video and
+              photo editors, designers.
+            </p>
+          </div>
+          <button type="button" class="collapsible">Where are you from?</button>
+          <div class="collapsible-content">
+            <p>We are from Serbia.</p>
+          </div>
+          <button type="button" class="collapsible">
+            What skills do you possess?
+          </button>
+          <div class="collapsible-content">
+            <p>
+              Photoshop, Final Cut, Studio Photography, Motion Video and many
+              more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container credentials-container footer-container">
+        <img src="./img/logo.png" alt="" />
+        <p>© 2018 Brailie. All rights reserved.</p>
+        <ul class="footer-list">
+          <li>
+            <a class="facebook" href=""><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+          </li>
+          <li>
+            <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <a id="on-top" href="#myTopnav">
+      <div>
+        <i class="fas fa-angle-up"></i>
+      </div>
+    </a>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+  </body>
+</html>

@@ -429,6 +429,10 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .map-holder iframe {
+    height: 370px;
+  }
+
   #forma input,
   textarea {
     margin-left: 0;

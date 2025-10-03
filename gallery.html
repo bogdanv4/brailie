@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brailie - Freelance Photographers" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/b76f6be7b5.js" crossorigin="anonymous"></script>
-    <script src="http://zeptojs.com/zepto.min.js"></script>
-    <script src="./vegas/vegas.min.js"></script>
-    <link rel="stylesheet" href="./vegas/vegas.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Brailie</title>
-</head>
+    <script
+      src="https://kit.fontawesome.com/b76f6be7b5.js"
+      crossorigin="anonymous"
+    ></script>
 
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Brailie</title>
+  </head>
+
+  <body>
     <header>
-        <div class="topnav" id="myTopnav">
-            <a id="logo" href="index.html">
-                <img src="./img/logo.png" alt="">
-            </a>
-            <a id="home-link" href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
+      <div class="topnav" id="myTopnav">
+        <a id="logo" href="index.html">
+          <img src="./img/logo.png" alt="Brailie logo" />
+        </a>
+        <a id="home-link" href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a
+          href="#"
+          class="icon"
+          onclick="event.preventDefault(); responsiveMenu()"
+          aria-label="Toggle menu"
+        >
+          <i class="fas fa-bars"></i>
+        </a>
+      </div>
     </header>
     <div class="hero hero-about">
-        <div class="hero-heading">
-            <h4>Gallery</h4>
-        </div>
+      <div class="hero-heading">
+        <h4>Gallery</h4>
+      </div>
     </div>
     <div class="main">
-        <div class="container">
-            <div class="main-heading">
-                <h2>Our Latest Shots</h2>
-            </div>
-            <div class="row about-row">
-                <div class="row-inner gallery-inner">
-                    <img src="./img/slika1.jpg" alt="">
-                </div>
-                <div class="row-inner gallery-inner">
-                    <img src="./img/slika2.jpg" alt="">
-                </div>
-                <div class="row-inner gallery-inner">
-                    <img src="./img/slika3.jpg" alt="">
-                </div>
-            </div>
-            <div class="row about-row">
-                <div class="row-inner gallery-inner">
-                    <img src="./img/slika9.jpg" alt="">
-                </div>
-                <div class="row-inner gallery-inner">
-                    <img src="./img/slika10.jpg" alt="">
-                </div>
-                <div class="row-inner gallery-inner">
-                    <img src="./img/slika11.jpg" alt="">
-                </div>
-            </div>
+      <div class="container">
+        <div class="main-heading">
+          <h2>Our Latest Shots</h2>
         </div>
-
+        <div class="row about-row">
+          <div class="row-inner gallery-inner">
+            <img src="./img/slika1.jpg" alt="Gallery image 1" />
+          </div>
+          <div class="row-inner gallery-inner">
+            <img src="./img/slika2.jpg" alt="Gallery image 2" />
+          </div>
+          <div class="row-inner gallery-inner">
+            <img src="./img/slika3.jpg" alt="Gallery image 3" />
+          </div>
+        </div>
+        <div class="row about-row">
+          <div class="row-inner gallery-inner">
+            <img src="./img/slika9.jpg" alt="Gallery image 4" />
+          </div>
+          <div class="row-inner gallery-inner">
+            <img src="./img/slika10.jpg" alt="Gallery image 5" />
+          </div>
+          <div class="row-inner gallery-inner">
+            <img src="./img/slika11.jpg" alt="Gallery image 6" />
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="container credentials-container footer-container">
-            <img src="./img/logo.png" alt="">
-            <p>© 2018 Brailie. All rights reserved.</p>
-            <ul class="footer-list">
-                <li><a class="facebook" href=""><i class="fab fa-facebook-f"></i></a></li>
-                <li><a class="instagram" href=""><i class="fab fa-instagram"></i></a></li>
-                <li><a class="twitter" href=""><i class="fab fa-twitter"></i></a></li>
-            </ul>
-        </div>
+      <div class="container credentials-container footer-container">
+        <img src="./img/logo.png" alt="Brailie logo" />
+        <p>© 2018 Brailie. All rights reserved.</p>
+        <ul class="footer-list">
+          <li>
+            <a
+              class="facebook"
+              href="https://facebook.com/"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="instagram"
+              href="https://instagram.com/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              class="twitter"
+              href="https://x.com/"
+              target="_blank"
+              aria-label="X"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
     <a id="on-top" href="#myTopnav">
-        <div>
-            <i class="fas fa-angle-up"></i>
-        </div>
+      <div>
+        <i class="fas fa-angle-up"></i>
+      </div>
     </a>
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>

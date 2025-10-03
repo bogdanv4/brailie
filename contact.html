@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Brailie - Freelance Photographers" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +16,6 @@
       src="https://kit.fontawesome.com/b76f6be7b5.js"
       crossorigin="anonymous"
     ></script>
-    <script src="http://zeptojs.com/zepto.min.js"></script>
-    <script src="./vegas/vegas.min.js"></script>
-    <link rel="stylesheet" href="./vegas/vegas.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Brailie</title>
   </head>
@@ -26,13 +24,18 @@
     <header>
       <div class="topnav" id="myTopnav">
         <a id="logo" href="index.html">
-          <img src="./img/logo.png" alt="" />
+          <img src="./img/logo.png" alt="Brailie logo" />
         </a>
         <a id="home-link" href="index.html">Home</a>
         <a href="contact.html">Contact</a>
         <a href="gallery.html">Gallery</a>
         <a href="about.html">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">
+        <a
+          href="#"
+          class="icon"
+          onclick="event.preventDefault(); responsiveMenu()"
+          aria-label="Toggle menu"
+        >
           <i class="fas fa-bars"></i>
         </a>
       </div>
@@ -53,6 +56,7 @@
               <iframe
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?q=fon&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                title="map"
                 frameborder="0"
                 scrolling="no"
                 marginheight="0"
@@ -98,17 +102,35 @@
     </div>
     <footer>
       <div class="container credentials-container footer-container">
-        <img src="./img/logo.png" alt="" />
+        <img src="./img/logo.png" alt="Brailie logo" />
         <p>© 2018 Brailie. All rights reserved.</p>
         <ul class="footer-list">
           <li>
-            <a class="facebook" href=""><i class="fab fa-facebook-f"></i></a>
+            <a
+              class="facebook"
+              href="https://facebook.com/"
+              target="_blank"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
           </li>
           <li>
-            <a class="instagram" href=""><i class="fab fa-instagram"></i></a>
+            <a
+              class="instagram"
+              href="https://instagram.com/"
+              target="_blank"
+              aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </li>
           <li>
-            <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+            <a
+              class="twitter"
+              href="https://x.com/"
+              target="_blank"
+              aria-label="X"
+              ><i class="fab fa-twitter"></i
+            ></a>
           </li>
         </ul>
       </div>

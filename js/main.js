@@ -8,21 +8,6 @@ function responsiveMenu() {
   }
 }
 
-//Vegas slajder na pocetnoj stranici
-$("#example, #vegas-slider").vegas({
-  slides: [
-    {
-      src: "./img/slika1.jpg",
-    },
-    {
-      src: "./img/slika2.jpg",
-    },
-    {
-      src: "./img/slika3.jpg",
-    },
-  ],
-});
-
 //Validacija forme na kontakt stranici
 function validation() {
   let name = document.forms["forma"]["name"].value;
